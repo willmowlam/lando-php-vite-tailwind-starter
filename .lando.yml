@@ -1,0 +1,26 @@
+name: lando-php-vite-tailwind-starter
+recipe: lamp
+config:
+  php: "8.2"
+  webroot: public
+
+# services:
+#   node:
+#     type: node:20
+#     scanner: false
+#     ports:
+#       - 3009:3009
+#     build:
+#       - npm install -g npm@10.8.2
+#       - npm install
+
+# tooling:
+#   dev:
+#     service: node
+#     cmd: npm run dev
+#   build:
+#     service: node
+#     cmd: npm run build
+
+env_file:
+  - .env
